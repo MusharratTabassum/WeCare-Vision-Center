@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Service = () => {
+
+
+const Service = (props) => {
+    const { title, short_description, image } = props.services;
     return (
         <div>
-            <h1>Service</h1>
-
+            <h1>this is service</h1>
         </div>
     );
 };

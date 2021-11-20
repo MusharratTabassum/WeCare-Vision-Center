@@ -1,0 +1,52 @@
+body {
+    font-family: "Jost", sans-serif;
+    color: #eff0f3;
+    background-color: #fff;
+    font-size: 17px;
+}
+.footer-area{
+    background-color: #020016;  
+}
+.pb-70 {
+    padding-bottom: 70px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+footer {
+    display: flex;
+}
+.footer-links{
+    text-decoration: none;
+}
+.footer-item{
+    text-align:right ;
+    padding: 30px;
+}
+.footer-item h3 {
+    font-size: 22px;
+    color: #20bdd1;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+
+}
+ul li{
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.link-undo{
+    text-decoration: none;
+    color: white;
+}
+.footer-down{
+    color: white;
+    background-color:  #020016;
+}
+.copyright-area {
+    background-color: #0e0c21;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}

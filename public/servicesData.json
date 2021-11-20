@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "title": "Dry Eye Surgery",
+        "short_description": "Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris itae erat conuat",
+        "description": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami. Cupim cow rump meatball beef.Cow jerky frankfurter, andouille prosciutto hamburger shoulder pork belly cup porchetta. ",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/services/main3.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Glaucoma & Cornea",
+        "short_description": "Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris itae erat conuat",
+        "description": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami. Cupim cow rump meatball beef.Cow jerky frankfurter, andouille prosciutto hamburger shoulder pork belly cup porchetta. Rump .",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/services/main2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Retina Repair",
+        "short_description": "Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris itae erat conuat",
+        "description": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami. Cupim cow rump meatball beef.Cow jerky frankfurter, andouille prosciutto hamburger shoulder pork belly cup porchetta. Rump biltong corned beef pastrami.Filet mignon prosciutto biltong, frankfurter venison corned beef ribeye tail porchetta pastrami. Pig meatball ground round cupim ball tip .",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/services/main1.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Laser Surgery",
+        "short_description": "Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris itae erat conuat",
+        "description": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami. Cupim cow rump meatball beef.Cow jerky frankfurter, andouille prosciutto hamburger shoulder pork belly cup porchetta. Rump biltong corned beef pastrami.Filet mignon prosciutto biltong, frankfurter venison corned beef ribeye tail porchetta pastrami. Pig meatball ground round cupim ball tip .",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/services/main6.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Surgical Procedure",
+        "slug": "caries-defence",
+        "short_description": "Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris itae erat conuat",
+        "description": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami. Cupim cow rump meatball beef.Cow jerky .",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/services/main5.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Cornea Transplant",
+        "short_description": "Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris itae erat conuat",
+        "description": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami. Cupim cow rump meatball beef.Cow jerky frankfurter, andouille prosciutto hamburger shoulder pork belly cup porchetta. Rump biltong corned beef pastrami.Filet mignon prosciutto biltong, frankfurter venison corned beef ribeye tail porchetta pastrami. Pig meatball ground round cupim ball tip turkey spare ribs kielbasa tri-tip boudin rump pork sirloin pork chop kevin. Turducken .",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/services/main4.jpg"
+    }
+]
