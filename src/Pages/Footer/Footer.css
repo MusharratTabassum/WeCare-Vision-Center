@@ -21,7 +21,7 @@ footer {
 }
 .footer-item{
     text-align:right ;
-    padding: 30px;
+    padding: 12px;
 }
 .footer-item h3 {
     font-size: 22px;
@@ -49,4 +49,10 @@ ul li{
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
+}
+.footer-title{
+    text-align: center;
+}
+small{
+    color: #eff0f3;
 }

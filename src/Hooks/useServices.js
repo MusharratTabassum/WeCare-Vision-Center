@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 const useServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch("../../public/servicesData.json")
+        fetch('./fakedata.json')
             .then(res => res.json())
             .then(data => setServices(data))
-            .then(data => console.log(data))
+
     }, [])
     return [services]
 }
