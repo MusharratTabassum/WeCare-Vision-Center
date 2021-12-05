@@ -1,43 +1,44 @@
 import React from 'react';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 import './Header.css'
 
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark header">
-                <div className="container-fluid ms-4">
-                    <Link className="navbar-brand banner-logo" to="/">
-                        weCare
+            <Navbar className="header" variant="dark" sticky="top" collapseOnSelect expand="lg" >
+                <Container fluid>
+
+                    <Link className="navbar-brand banner-logo ms-5" to="/">
+                        WeCare
                         <small>A Solution Of Your Vision</small></Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav-text">
-                            <li className="nav-item me-3">
-                                <Link className="nav-link active items" aria-current="page" to="/home">Home</Link>
-                            </li>
-                            <li className="nav-item me-3">
-                                <Link className="nav-link active items" aria-current="page" to="/service">Service</Link>
-                            </li>
-                            <li className="nav-item me-3">
-                                <Link className="nav-link active items" aria-current="page" to="/about">About Us</Link>
-                            </li>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse className="justify-content-end">
+                        <Nav.Link className="nav-links nav-text" as={Link} to="/home">Home</Nav.Link>
+                        <Nav.Link className="header" as={Link} to="/home#services">Services</Nav.Link>
+                        <Nav.Link className="header" as={Link} to="/about">About Us</Nav.Link>
+                        {user?.email ?
+                            <Button onClick={logOut} variant="light">Logout</Button> :
+                            <Nav.Link as={Link} to="/login">Login</Nav.Link>}
+                        <Navbar.Text>
+                            <a className="header" href="#login">{user?.displayName}</a>
+                        </Navbar.Text>
+                        <Navbar.Brand href="#">
+                            <img
+                                src={user.photoURL}
+                                width="40"
+                                height="50"
+                                className="user-img"
 
-                            <li className="nav-item me-3">
-                                <Link className="nav-link active items" aria-current="page" to="/contact">Contact</Link>
-                            </li>
-                            <li className="nav-item me-3">
-                                <Link className="nav-link active items" aria-current="page" to="/login">Login</Link>
-                            </li>
+                            />
+                        </Navbar.Brand>
 
-                        </ul>
 
-                    </div>
-                </div>
-            </nav>
-
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </div>
     );
 };

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Lorisa Teara",
+        "occupassion": "Manager",
+        "review": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami.",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/testimonials2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jack Jacson",
+        "occupassion": "Businessman",
+        "review": "Biltong shank pork loin salami tenderloin tongue swine ribeye pancetta. Hamburger jerky pig pork loin frankfurter. Jowl hamburger bresaola pork belly andouille boudin. Shankle cupim prosciutto spare ribs rump picanha pork kielbasa porchetta doner strip steak biltong pastrami.",
+        "image": "https://templates.hibootstrap.com/opnix/rtl/assets/images/testimonials1.jpg"
+    }
+]

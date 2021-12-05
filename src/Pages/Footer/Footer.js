@@ -114,8 +114,6 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-
-
                     </div>
 
                 </footer >

@@ -11,19 +11,25 @@
 .header{
     background-color: #20bdd1 ;
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
     font-weight: 700;
+}
+.headerL:hover{
+  color: white;
 }
 small{
     font-weight: lighter;
     font-size:x-small ;
 }
 .banner-logo{
-  font-size: xx-large;
- 
-}
+  font-size:30px;
+ }
 .logo-title{
   margin-top: 0%;
 }
-
+.nav-text{
+  color: white;
+}
+.user-img{
+  clip-path: circle();
+  margin-top: 10px;
+}
