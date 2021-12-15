@@ -44,7 +44,7 @@ hr{
     margin: -28px auto 10px;
 }
 
-.error{
+.error small{
     color: red;
 }
 img{

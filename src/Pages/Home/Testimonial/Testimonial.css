@@ -27,6 +27,7 @@ body {
       max-width: 60px;
       border-radius: 50%;
 margin-left: 20px;  
+margin-top: 0;
 }
 .upper-part h3{
     font-size: 22px;

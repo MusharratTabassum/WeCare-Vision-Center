@@ -7,10 +7,10 @@ import Footer from './Pages/Footer/Footer';
 import About from './Pages/About/About';
 import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Contact from './Pages/Contact/Contact';
-import Services from './Pages/Home/Services/Services';
 import AllServices from './Pages/AllServices/AllServices';
 import Login from './Pages/Login/Login/Login';
 import AuthProvider from './Contexts/AuthProvider';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -38,9 +38,9 @@ function App() {
             <Route path="/services">
               <AllServices></AllServices>
             </Route>
-            <Route path="/servicedetail/:serviceId">
+            <PrivateRoute path="/servicedetail/:serviceId">
               <ServiceDetail></ServiceDetail>
-            </Route>
+            </PrivateRoute>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

@@ -33,3 +33,12 @@ small{
   clip-path: circle();
   margin-top: 10px;
 }
+.down{
+  background-color: #20bdd1;
+}
+.btn-primary {
+  color: #fff;
+   background-color:#20bdd1; 
+   border-color: #20bdd1; 
+}
+

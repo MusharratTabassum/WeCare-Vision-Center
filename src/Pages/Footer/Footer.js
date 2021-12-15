@@ -60,19 +60,19 @@ const Footer = () => {
                             <h3>Explore</h3>
                             <ul>
                                 <li>
-                                    <Link className="link-undo" to="blog.html">Blog</Link>
+                                    <Link className="link-undo" to="/">Blog</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="appointment.html">Appointment</Link>
+                                    <Link className="link-undo" to="/contact">Appointment</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="shop.html">Shop</Link>
+                                    <Link className="link-undo" to="/">Shop</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="doctor-details.html">Portfolio</Link>
+                                    <Link className="link-undo" to="/doctors">Portfolio</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="contact.html">Support</Link>
+                                    <Link className="link-undo" to="/contact">Support</Link>
                                 </li>
                             </ul>
 
@@ -81,19 +81,19 @@ const Footer = () => {
                             <h3>About</h3>
                             <ul>
                                 <li>
-                                    <Link className="link-undo" to="doctors.html">Doctors</Link>
+                                    <Link className="link-undo" to="/doctors">Doctors</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="about.html">About</Link>
+                                    <Link className="link-undo" to="/about">About</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="services.html">Services</Link>
+                                    <Link className="link-undo" to="/home#services">Services</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="doctors.html">Departments</Link>
+                                    <Link className="link-undo" to="/doctors">Departments</Link>
                                 </li>
                                 <li>
-                                    <Link className="link-undo" to="contact.html">Contact</Link>
+                                    <Link className="link-undo" to="/contact">Contact</Link>
                                 </li>
                             </ul>
                         </div>
