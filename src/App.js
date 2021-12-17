@@ -5,12 +5,13 @@ import Home from './Pages/Home/Home';
 import Header from './Pages/Header/Header';
 import Footer from './Pages/Footer/Footer';
 import About from './Pages/About/About';
-import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
 import Contact from './Pages/Contact/Contact';
 import AllServices from './Pages/AllServices/AllServices';
 import Login from './Pages/Login/Login/Login';
 import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Services from './Pages/Home/Services/Services';
+import ServiceDetail from './Pages/Home/ServiceDetail/ServiceDetail';
 
 
 function App() {

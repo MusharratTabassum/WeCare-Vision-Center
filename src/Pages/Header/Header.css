@@ -41,4 +41,14 @@ small{
    background-color:#20bdd1; 
    border-color: #20bdd1; 
 }
+.logout-btn{
+  color: #fff;
+   background-color:#20bdd1; 
+   border: none;
+   font-weight: 700;
+
+}
+.logout-btn:hover{
+  background-color: #20bdd1;
+}
 

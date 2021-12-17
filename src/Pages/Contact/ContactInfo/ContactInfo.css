@@ -1,0 +1,15 @@
+.coffee{
+    color: #20bdd1;
+    font-size:xx-large;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.card-body p:hover{
+    color: #20bdd1;
+    cursor: pointer;
+}
+.contact-info-area{
+    margin-top: 100px;
+    margin-bottom: 120px;
+   
+}

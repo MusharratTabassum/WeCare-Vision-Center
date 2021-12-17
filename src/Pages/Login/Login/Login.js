@@ -11,7 +11,6 @@ const Login = () => {
         <div>
             <div className="login-form">
                 <img src={image} alt="" />
-
                 <form onSubmit={handleRegistrationThroughEmail}>
                     <h1>{isLogin ? 'Login' : 'Register'}</h1>
                     {!isLogin && <div>
@@ -23,12 +22,7 @@ const Login = () => {
                         <span className="error"><small>{error}</small></span>
                         {/* <input type="submit" />*/}
 
-                        <div className="form-check">
-                            <input onChange={toggleLogin} className="form-check-input" type="checkbox" id="gridCheck1" />
-                            <label className="form-check-label" htmlFor="gridCheck1">
-                                <p>Already Registered?</p>
-                            </label>
-                        </div>
+
 
                         <button type="submit" className="signup-btn">
                             {isLogin ? 'Login' : 'Register'}

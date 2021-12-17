@@ -28,7 +28,7 @@ const Form = () => {
                             {errors.email && <span className="error">Email field is required</span>}
                         </div>
 
-                        <input className='mt-3' type="submit" />
+                        <input className='mt-3' type="submit" value="Send Message" />
                     </form>
                 </div>
             </div>
