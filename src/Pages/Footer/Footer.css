@@ -37,8 +37,11 @@ ul li{
 }
 
 .link-undo{
-    text-decoration: none;
+    
     color: white;
+}
+.link-undo:hover{
+    color: #fff;
 }
 .footer-down{
     color: white;

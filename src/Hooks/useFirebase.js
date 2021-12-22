@@ -9,12 +9,11 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
 
-
+    const googleProvider = new GoogleAuthProvider();
 
     const signInUsingGoogle = () => {
         setIsLoading(true);
-        const googleProvider = new GoogleAuthProvider();
-        return signInWithPopup(auth, googleProvider)
+        return signInWithPopup(auth, googleProvider);
 
     }
     const logOut = () => {
@@ -41,7 +40,6 @@ const useFirebase = () => {
     //Email/Password Authentication
 
     const [name, setName] = useState('');
-    const [photo, setPhoto] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -120,16 +118,14 @@ const useFirebase = () => {
                 // ..
             })
             .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
+
                 // ..
             });
 
     }
     const setUserName = () => {
         updateProfile(auth.currentUser, {
-            displayName: name,
-            photoURL: photo
+            displayName: name
         }).then(() => {
             // Profile updated!
             // ...
@@ -156,7 +152,8 @@ const useFirebase = () => {
         handleNameChange,
         error,
         handleLoginThroughEmail,
-        handleResetPassword, name, photo
+        handleResetPassword,
+        name
     };
 }
 

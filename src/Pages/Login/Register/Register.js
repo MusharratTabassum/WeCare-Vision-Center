@@ -28,7 +28,7 @@ const Register = () => {
                         <hr />
                         <p className="or">OR</p>
 
-                        <button onClick={signInUsingGoogle} type="button" className="signup-btn">Sign in with google</button>
+                        <button onClick={signInUsingGoogle} type="button" className="signup-btn">Continue with google</button>
 
                         <p>Already have an account? <Link to="/login">Sign in</Link></p>
                     </div>

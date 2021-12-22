@@ -14,6 +14,7 @@ import ServiceDetail from './Pages/Home/ServiceDetail/ServiceDetail';
 import Doctors from './Pages/Doctors/Doctors/Doctors';
 import Register from './Pages/Login/Register/Register';
 import NotFound from './Pages/NotFound/NotFound';
+import DoctorDetail from './Pages/Doctors/DoctorDetail/DoctorDetail';
 
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
             <PrivateRoute path="/servicedetail/:serviceId">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
+            <Route path="/doctordetail/:doctorId">
+              <DoctorDetail></DoctorDetail>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
 

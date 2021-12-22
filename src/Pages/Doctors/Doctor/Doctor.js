@@ -19,7 +19,7 @@ const Doctor = ({ doctor }) => {
                         </div>
                         <div className="d-flex justify-content-end align-items-center">
                             <Link to={`/doctordetail/${id}`}>
-                                <button className="button-style" >+ More Details</button>
+                                <button className="button-style" >+ See More </button>
                             </Link>
                         </div>
                     </div>

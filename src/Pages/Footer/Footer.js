@@ -66,9 +66,7 @@ const Footer = () => {
                                 <li>
                                     <Link className="link-undo" to="/contact">Appointment</Link>
                                 </li>
-                                <li>
-                                    <Link className="link-undo" to="/">Shop</Link>
-                                </li>
+
                                 <li>
                                     <Link className="link-undo" to="/doctors">Portfolio</Link>
                                 </li>

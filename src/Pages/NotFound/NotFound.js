@@ -1,9 +1,10 @@
 import React from 'react';
+import image from './404-Page.jpg'
 
 const NotFound = () => {
     return (
-        <div>
-            <div>404 Not Available!!</div>
+        <div className='p-5'>
+            <img className='w-75' src={image} alt="" />
         </div>
     );
 };

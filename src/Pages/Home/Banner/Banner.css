@@ -15,7 +15,7 @@
  
 }
 .banner-bg-one {
-    background-image: url(https://templates.hibootstrap.com/opnix/rtl/assets/images/banner/main1.jpg);
+    background-image: url('./banner.jpg');
 }
 
 h1,h3{
@@ -56,4 +56,5 @@ button{
    }
    .button-align{
        text-align: left;
+       
    }

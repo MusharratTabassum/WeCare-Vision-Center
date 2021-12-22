@@ -1,7 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import image from "./image/no1.png";
 import "./Login.css"
@@ -9,20 +7,20 @@ import "./Login.css"
 const Login = () => {
     const { signInUsingGoogle, handleEmailChange, handlePasswordChange,
         error, handleLoginThroughEmail, handleResetPassword } = useAuth();
-    {/*
-        const location = useLocation();
+
+    const location = useLocation();
     const history = useHistory();
-    const redirect_url = location?.state.from || "/";
+    const redirect_url = location.state?.from || "/";
+
+    console.log('Came from', location.state?.from);
+
 
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {
-                history.pushState(redirect_url);
+                history.push(redirect_url);
             })
     }
-    */}
-
-
     return (
         <div>
             <div className="login-form mb-5 ">
@@ -44,12 +42,10 @@ const Login = () => {
                         <hr />
                         <p className="or">OR</p>
 
-                        <button onClick={signInUsingGoogle} type="button" className="signup-btn">Sign in with google</button>
+                        <button onClick={handleGoogleLogin} type="button" className="signup-btn">Continue with google</button>
 
                         <p>Create an account now <Link to="/register">Register</Link></p>
                         <p>Forget your password? <button className='reset' onClick={handleResetPassword}>Reset</button></p>
-
-
 
                     </div>
 
