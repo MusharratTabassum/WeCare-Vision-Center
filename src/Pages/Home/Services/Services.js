@@ -10,7 +10,7 @@ const Services = () => {
         <div id="services">
             <div className="container">
                 <h1 className="mb-3 service-title">Services</h1>
-                <h2 className="mb-2">weCare Eye Services</h2>
+                <h2 className="mb-2">WeCare Eye Services</h2>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         services.map(service => (<Service

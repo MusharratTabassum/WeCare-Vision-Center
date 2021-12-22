@@ -1,10 +1,13 @@
 .login-form{
-    width: 320px;
+    width: 340px;
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
     background: #fff;
     padding: 20px;
     margin: 6% auto 0;
     text-align: center;
+    box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    -webkit-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    -moz-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
 }
 .login-form h1{
     color: #20bdd1;
@@ -50,4 +53,9 @@ hr{
 img{
     width: 85px;
     margin-top: -60px;
+}
+.reset{
+    background-color: white;
+    color: rgb(126, 126, 250);
+ 
 }

@@ -7,7 +7,7 @@ import { HashLink } from 'react-router-hash-link';
 
 
 const Header = () => {
-    const { user, logOut } = useAuth();
+    const { user, logOut, name, photo } = useAuth();
     return (
         <div>
             <Navbar className="header" variant="dark" sticky="top" collapseOnSelect expand="lg">
@@ -19,6 +19,7 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link className="nav-links nav-text" as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link className="header" as={HashLink} to="/home#services">Services</Nav.Link>
+                        <Nav.Link className="header" as={HashLink} to="/doctors">Doctors</Nav.Link>
                         <Nav.Link className="header" as={Link} to="/about">About Us</Nav.Link>
                         <Nav.Link className="header" as={Link} to="/contact">Contact</Nav.Link>
 
@@ -29,10 +30,10 @@ const Header = () => {
                             }
                         </Nav.Link>
                         <Navbar.Text>
-                            <Link to="/" className="header">{user?.displayName}</Link>
+                            <Link to="/" className="header">{user?.displayName || name.displayName}</Link>
                         </Navbar.Text>
                         <img
-                            src={user.photoURL}
+                            src={user.photoURL || name.photoURL}
                             width="35"
                             height="45"
                             alt=""

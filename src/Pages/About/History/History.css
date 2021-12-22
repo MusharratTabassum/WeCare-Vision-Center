@@ -1,0 +1,26 @@
+p{
+    text-align: start;
+}
+.address{   
+    box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.658);
+    -webkit-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    -moz-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    margin-top: 73px;
+    margin-bottom: 150px;
+    background-color: #70cfdba6;
+}
+
+.address:hover{
+    background-color: white;  
+    color:#20bdd1 ;
+}
+.history{
+    text-align: start;
+    padding: 4%;
+    box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.658);
+    -webkit-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    -moz-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+}
+.history li{
+    color: black;
+}

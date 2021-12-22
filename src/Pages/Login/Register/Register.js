@@ -1,36 +1,20 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
-import image from "./image/no1.png";
-import "./Login.css"
-
-const Login = () => {
-    const { signInUsingGoogle, handleEmailChange, handlePasswordChange,
-        error, handleLoginThroughEmail, handleResetPassword } = useAuth();
-    {/*
-        const location = useLocation();
-    const history = useHistory();
-    const redirect_url = location?.state.from || "/";
-
-    const handleGoogleLogin = () => {
-        signInUsingGoogle()
-            .then(result => {
-                history.pushState(redirect_url);
-            })
-    }
-    */}
+import image from "./no1.png";
 
 
+const Register = () => {
+    const { signInUsingGoogle, handleEmailChange, handleNameChange, handlePasswordChange, handleRegistrationThroughEmail, error } = useAuth();
     return (
         <div>
-            <div className="login-form mb-5 ">
+            <div className="login-form mb-5">
                 <img src={image} alt="" />
-                <form onSubmit={handleLoginThroughEmail}>
-                    <h1>Login</h1>
+                <form onSubmit={handleRegistrationThroughEmail}>
+                    <h1>Register</h1>
                     <div>
 
+                        <input onBlur={handleNameChange} className="input-box" type="text" defaultValue="test" placeholder="write your name" />
                         <input onBlur={handleEmailChange} className="input-box" type="email" defaultValue="test" placeholder="write your email" />
 
                         <input onBlur={handlePasswordChange} className="input-box" placeholder="write your password" type="password" required />
@@ -38,7 +22,7 @@ const Login = () => {
                         <span className="error"><small>{error}</small></span>
                         {/* <input type="submit" />*/}
                         <button type="submit" className="signup-btn">
-                            Login
+                            Register
                         </button>
 
                         <hr />
@@ -46,17 +30,14 @@ const Login = () => {
 
                         <button onClick={signInUsingGoogle} type="button" className="signup-btn">Sign in with google</button>
 
-                        <p>Create an account now <Link to="/register">Register</Link></p>
-                        <p>Forget your password? <button className='reset' onClick={handleResetPassword}>Reset</button></p>
-
-
-
+                        <p>Already have an account? <Link to="/login">Sign in</Link></p>
                     </div>
 
                 </form>
             </div>
+
         </div>
     );
 };
 
-export default Login;
+export default Register;

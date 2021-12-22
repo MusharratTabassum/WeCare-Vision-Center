@@ -16,6 +16,9 @@
    cursor: pointer;
 }
 .box{
+   box-shadow: -1px 6px 49px 6px rgba(205, 226, 230, 0.521);
+   -webkit-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+   -moz-box-shadow: -1px 6px 49px 6px rgba(216, 228, 230, 0.521);
 border-radius: 5%;
 }
 p{
@@ -28,4 +31,8 @@ p{
 }
 .text-align{
    text-align: start;
+}
+.box img{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }

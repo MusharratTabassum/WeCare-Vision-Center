@@ -1,12 +1,15 @@
 import React from 'react';
 import Banner from './Banner/Banner';
-import Faq from './Faq/Faq';
+import History from './History/History';
+import ServiceProvide from './ServiceProvide/ServiceProvide';
 
 const About = () => {
     return (
         <div>
             <Banner></Banner>
-            <Faq></Faq>
+            <History></History>
+            <ServiceProvide></ServiceProvide>
+
 
         </div>
     );

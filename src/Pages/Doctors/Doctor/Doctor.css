@@ -1,0 +1,38 @@
+.title{
+    color: #20bdd1;
+    font-size: 22px;
+    margin-bottom: 10px;
+ }
+ .title:hover{
+    color: #20bdd1;
+    cursor: pointer;
+ }
+ .box{
+ border-radius: 5%;
+ }
+ p{
+    font-family: "Jost", sans-serif;
+    color: black;
+    font-size: smaller;  
+    font-weight: 500;
+    line-height: 1.7;
+ 
+ }
+ .text-align{
+    text-align: start;
+ }
+ .doctor img{
+     height: 400px;
+     padding-top: 15%;
+    
+    
+ }
+ .doctor{
+    box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    -webkit-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    -moz-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    border-radius: 5%;
+ }
+ .doc-img{
+    background-color: #e1f4fa;
+ }

@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "./../Pages/Login/Firebase/firebase.init"
 initializeAuthentication();
@@ -14,11 +14,8 @@ const useFirebase = () => {
     const signInUsingGoogle = () => {
         setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                setUser(result.user);
-            })
-            .finally(() => setIsLoading(false));
+        return signInWithPopup(auth, googleProvider)
+
     }
     const logOut = () => {
         signOut(auth)
@@ -43,15 +40,14 @@ const useFirebase = () => {
 
     //Email/Password Authentication
 
+    const [name, setName] = useState('');
+    const [photo, setPhoto] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const [isLogin, setIsLogin] = useState(false);
 
 
-    const toggleLogin = e => {
-        setIsLogin(e.target.checked)
-    }
+
 
     const handleRegistrationThroughEmail = e => {
         e.preventDefault();
@@ -64,11 +60,24 @@ const useFirebase = () => {
             setError('Password Must contain 2 upper case');
             return;
         }
-        if (isLogin) {
-            processLogin(email, password);
-        }
         else {
             registerNewUser(email, password);
+        }
+
+    }
+    const handleLoginThroughEmail = e => {
+        e.preventDefault();
+        console.log(email, password);
+        if (password.length < 6) {
+            setError("password should be more than 6 characters");
+            return;
+        }
+        if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+            setError('Password Must contain 2 upper case');
+            return;
+        }
+        else {
+            processLogin(email, password);
         }
 
     }
@@ -89,11 +98,46 @@ const useFirebase = () => {
                 const user = result.user;
                 console.log(user);
                 setError('');
+                verifyEmail();
+                setUserName();
 
             })
             .catch(error => {
                 setError(error.message);
             })
+    }
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+            .then(result => {
+                console.log(result);
+            })
+        alert('A verification email has been sent!!')
+    }
+    const handleResetPassword = () => {
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                // Password reset email sent!
+                // ..
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+
+    }
+    const setUserName = () => {
+        updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photo
+        }).then(() => {
+            // Profile updated!
+            // ...
+        })
+    }
+
+    const handleNameChange = e => {
+        setName(e.target.value);
     }
     const handleEmailChange = e => {
         setEmail(e.target.value);
@@ -109,8 +153,10 @@ const useFirebase = () => {
         handleRegistrationThroughEmail,
         handleEmailChange,
         handlePasswordChange,
+        handleNameChange,
         error,
-        toggleLogin
+        handleLoginThroughEmail,
+        handleResetPassword, name, photo
     };
 }
 

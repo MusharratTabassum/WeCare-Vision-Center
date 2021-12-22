@@ -13,3 +13,12 @@
     margin-bottom: 120px;
    
 }
+.contact-info{
+    box-shadow: -1px 6px 49px 6px rgba(205, 226, 230, 0.521);
+    -webkit-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
+    -moz-box-shadow: -1px 6px 49px 6px rgba(216, 228, 230, 0.521);
+
+}
+.first-height{
+    padding-bottom: 40px;
+}

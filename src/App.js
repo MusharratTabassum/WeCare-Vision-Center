@@ -10,8 +10,10 @@ import AllServices from './Pages/AllServices/AllServices';
 import Login from './Pages/Login/Login/Login';
 import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
-import Services from './Pages/Home/Services/Services';
 import ServiceDetail from './Pages/Home/ServiceDetail/ServiceDetail';
+import Doctors from './Pages/Doctors/Doctors/Doctors';
+import Register from './Pages/Login/Register/Register';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 function App() {
@@ -36,12 +38,22 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
             <Route path="/services">
               <AllServices></AllServices>
+            </Route>
+            <Route path="/doctors">
+              <Doctors></Doctors>
             </Route>
             <PrivateRoute path="/servicedetail/:serviceId">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

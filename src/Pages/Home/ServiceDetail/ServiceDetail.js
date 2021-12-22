@@ -13,27 +13,25 @@ const ServiceDetail = () => {
             .then((res) => res.json())
             .then((data) => setDetail(data));
     }, []);
-    const newData = detail.find(item => item.id == serviceId)
 
-    console.log(newData);
-
+    const selectedData = detail.find(item => item.id == serviceId)
+    console.log(selectedData);
     return (
         <div>
-
             <div className='container'>
                 <div className='detail'>
                     <div >
-                        <img className='img-detail' src={newData?.image} alt="" />
+                        <img className='img-detail' src={selectedData?.image} alt="" />
                     </div>
                     <div>
-                        <h1>{newData?.title}</h1>
-                        <p>{newData?.description}</p>
+                        <h1>{selectedData?.title}</h1>
+                        <p>{selectedData?.description}</p>
                     </div>
                 </div>
 
 
                 <div>
-                    <h2>Why choose WeCare for {newData?.title}  ?</h2>
+                    <h2>Why choose WeCare for {selectedData?.title}  ?</h2>
                 </div>
             </div>
             <div>
