@@ -57,5 +57,7 @@ img{
 .reset{
     background-color: white;
     color: rgb(126, 126, 250);
+    margin-top: 0;
+    padding: 0;
  
 }

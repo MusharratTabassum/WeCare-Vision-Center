@@ -5,9 +5,11 @@ p{
     box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.658);
     -webkit-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
     -moz-box-shadow: -1px 6px 49px 6px rgba(188, 219, 224, 0.521);
-    margin-top: 73px;
+    margin-top: 68px;
     margin-bottom: 150px;
     background-color: #70cfdba6;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .address:hover{

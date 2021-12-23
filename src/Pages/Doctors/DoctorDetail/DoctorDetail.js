@@ -17,10 +17,10 @@ const DoctorDetail = () => {
 
     return (
         <div className='container'>
-            <div className='row d-flex justify-content-center'>
-                <div className='col-12 col-md-6 doctor-detail '>
+            <div className='row d-flex justify-content-center mb-4'>
+                <div className=' col-md-6 doctor-detail '>
 
-                    <img className='img-detail mt-1 p-2' src={selectedData?.image} alt="" />
+                    <img className='img-detail ' src={selectedData?.image} alt="" />
 
                     <div className="mt-5">
                         <h1>{selectedData?.name}</h1>

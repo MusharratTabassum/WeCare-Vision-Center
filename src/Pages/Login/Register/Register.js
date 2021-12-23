@@ -5,17 +5,17 @@ import image from "./no1.png";
 
 
 const Register = () => {
-    const { signInUsingGoogle, handleEmailChange, handleNameChange, handlePasswordChange, handleRegistrationThroughEmail, error } = useAuth();
+    const { signInUsingGoogle, handleEmailChange, handleNameChange, handlePasswordChange, handleRegistrationThroughEmail, error, name } = useAuth();
     return (
-        <div>
+        <div className='mt-5'>
             <div className="login-form mb-5">
                 <img src={image} alt="" />
                 <form onSubmit={handleRegistrationThroughEmail}>
                     <h1>Register</h1>
                     <div>
 
-                        <input onBlur={handleNameChange} className="input-box" type="text" defaultValue="test" placeholder="write your name" />
-                        <input onBlur={handleEmailChange} className="input-box" type="email" defaultValue="test" placeholder="write your email" />
+                        <input onBlur={handleNameChange} className="input-box" type="text" defaultValue={name} placeholder="write your name" />
+                        <input onBlur={handleEmailChange} className="input-box" type="email" placeholder="write your email" required />
 
                         <input onBlur={handlePasswordChange} className="input-box" placeholder="write your password" type="password" required />
 

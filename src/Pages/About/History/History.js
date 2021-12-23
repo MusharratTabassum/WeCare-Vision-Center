@@ -14,26 +14,19 @@ const History = () => {
                     </div>
                 </div>
                 <div className='col-12 col-md-3 col-sm-12 '>
-                    <div className='row address ms-4 p-4'>
-                        <div className='mb-5 mt-3 pt-2'>
-                            <h3 className='pb-2'>Contact Address</h3>
-                            <p>Plot 15, Road 71, Gulshan, Dhaka-1212 Bangladesh</p>
-                            <p>Tel: +88 02 8836444, +88 02 8836000</p>
-                            <p>Fax: +88 02 8836446</p>
-                            <p>Email: info@wecare.com</p>
-                        </div>
-                        <div>
-                            <h2>Call Us for Emergency</h2>
-                            <h3>+06479979641</h3>
-                            <h3>+06479979642</h3>
-                        </div>
+                    <div className='row address ps-2 pe-2'>
 
+                        <h3 className='pb-2'>Contact Address</h3>
+                        <p>Plot 15, Road 71, Gulshan, Dhaka-1212 Bangladesh</p>
+                        <p>Tel: +88 02 8836444, +88 02 8836000</p>
+                        <p>Fax: +88 02 8836446</p>
+                        <p>Email: info@wecare.com</p>
+                        <h1>Call Us for Emergency</h1>
+                        <h3>+06479979641</h3>
+                        <h3>+06479979642</h3>
 
                     </div>
-
-
                 </div>
-
             </div>
 
 

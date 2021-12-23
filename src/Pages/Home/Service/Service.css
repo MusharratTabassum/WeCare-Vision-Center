@@ -5,6 +5,10 @@
    font-weight: 600;
    text-align: center;
    background-color: #ffffff;
+   transition: font-size 2s;
+}
+.button-style:hover{
+   font-size: 18px;
 }
 .title{
    color: #20bdd1;
@@ -35,4 +39,5 @@ p{
 .box img{
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+    transition: width 10s;
 }

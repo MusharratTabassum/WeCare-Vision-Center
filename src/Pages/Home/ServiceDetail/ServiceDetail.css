@@ -1,9 +1,11 @@
 .detail{
-    padding: 5%;
+   padding-top: 40px;
+   padding-bottom: 60px;
 }
-.img-detail{
-    width: 500px;
+.img-details{
+    width: 480px;
     height: 400px;
     background-color: skyblue;
+    padding: 10px;
     
 }

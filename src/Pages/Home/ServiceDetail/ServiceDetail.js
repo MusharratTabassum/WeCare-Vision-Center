@@ -18,20 +18,15 @@ const ServiceDetail = () => {
     console.log(selectedData);
     return (
         <div>
-            <div className='container'>
-                <div className='detail'>
+            <div className='container '>
+                <div className='detail pe-2 mt-5'>
                     <div >
-                        <img className='img-detail' src={selectedData?.image} alt="" />
+                        <img className='img-details' src={selectedData?.image} alt="" />
                     </div>
                     <div>
-                        <h1>{selectedData?.title}</h1>
-                        <p>{selectedData?.description}</p>
+                        <h1 className="mt-4 mb-2">{selectedData?.title}</h1>
+                        <p className='p-2'>{selectedData?.description}</p>
                     </div>
-                </div>
-
-
-                <div>
-                    <h2>Why choose WeCare for {selectedData?.title}  ?</h2>
                 </div>
             </div>
             <div>
