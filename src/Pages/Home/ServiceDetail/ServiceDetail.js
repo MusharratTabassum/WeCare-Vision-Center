@@ -21,7 +21,7 @@ const ServiceDetail = () => {
             <div className='container '>
                 <div className='detail pe-2 mt-5'>
                     <div >
-                        <img className='img-details' src={selectedData?.image} alt="" />
+                        <img className='img-details img-fluid max-width: 100%' src={selectedData?.image} alt="" />
                     </div>
                     <div>
                         <h1 className="mt-4 mb-2">{selectedData?.title}</h1>
