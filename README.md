@@ -8,6 +8,10 @@ Any patient may able to contact with the team by submitting the contact form.
 There is two way of validation.One is with gmail and another one is with email-password authentication.
 Only the valid user will able to see the service's detail.     
 
+ 
+Frameworks Used :
+  React Js
+
 ## Live Link
 [WeCare Vision Center](https://wecare-vision-center.web.app/)
 
