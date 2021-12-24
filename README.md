@@ -28,6 +28,7 @@ This project is followed by the things:
 
 - React Js
 - React Router Dom
+- React Hook Form
 - React Bootstrap
 - Bootstrap 5
 - React FontAwesome
